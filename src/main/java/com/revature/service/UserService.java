@@ -215,7 +215,10 @@ public class UserService {
             menuService.accountDoesNotExist();
         }
     }
-
+    /**
+     Collects an account name and then requests all the transaction history
+     for that account from the database.
+     **/
     public void viewTransactionHistory(){
         menuService.enterAccountName();
         String accountName = scanner.nextLine();
